@@ -81,7 +81,7 @@ export default function Header() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Quotes{" "}
+            Quotes
             <IconButton edge="start" color="secondary">
               <Favorite />
             </IconButton>

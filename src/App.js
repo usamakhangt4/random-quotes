@@ -10,12 +10,7 @@ export default class App extends Component {
   };
   async componentDidMount() {
     const fetchedData = await fetchData();
-    // console.log(fetchedData);
-    // Object.keys(fetchedData).map((key) => {
-    //   fetchedData = fetchedData.map((quote) => {
-    //     console.log(quote);
-    //   });
-    // });
+
     this.setState({ data: fetchedData });
   }
 

@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after,
+ul,
+li,
+a,
+button,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+image,
+svg,
+path,
+g,
+canvas {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font-family: "Roboto";
+  user-select: none;
+  list-style: none;
+  position: relative;
+}
+
+html,
+body {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: "Roboto";
+}
+
+.sw-loader__wrapper {
+  position: relative;
+}
+.sw-loader__wrapper--center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.sw-loader__wrapper .sw-loader__holder {
+  width: 70%;
+  height: 70%;
+  margin-left: 15%;
+  margin-top: 15%;
+  position: relative;
+  transform: rotate(-45deg);
+}
+.sw-loader__wrapper .sw-loader__holder .rect {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    to right,
+    #141562,
+    #486fbc,
+    #eab5a1,
+    #8dd6ff,
+    #4973c9,
+    #d07ca7,
+    #f4915e,
+    #f5919e,
+    #b46f89,
+    #141562,
+    #486fbc
+  );
+  background-position: 0% 50%;
+  background-size: 1000% 1000%;
+  overflow: hidden;
+  animation: moveGradient 15s infinite;
+}
+
+@keyframes moveGradient {
+  to {
+    background-position: 100% 50%;
+  }
+}
